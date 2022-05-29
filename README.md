@@ -1,4 +1,4 @@
-**Gato-bot.py**
+# **GatoBot**
 
 **Usage:** <br />
 Install Python 3 if it is not installed already <br />
