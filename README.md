@@ -11,5 +11,6 @@ The rest will be easy to understand!
 **Current Features:**
 
 `Debug [arg]` Repeats the argument into chat <br />
-`Version` Tells you the current version of gato-bot
+`Version` Tells you the current version of gato-bot <br />
+`Ping` Tells you the ping of the bot  <br />
 
