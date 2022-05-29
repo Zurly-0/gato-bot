@@ -1,4 +1,4 @@
-# **GatoBot**
+# **GatoBot Public, cos private is not done yet :]**
 
 **Usage:** <br />
 Install Python 3 if it is not installed already <br />
