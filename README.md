@@ -14,3 +14,5 @@ The rest will be easy to understand!
 `Version` Tells you the current version of gato-bot <br />
 `Ping` Tells you the ping of the bot  <br />
 
+**Please Note** <br />
+This version is far from as good as the private release, and is not fit for use rn. Currently only features debug commands (Maybe could be used as a base?)
