@@ -4,9 +4,10 @@ from discord import Webhook
 from discord.ext import commands
 import time
 import datetime
-
-# Put your discord bot's token here (You can get it from discord.com/developers/applications/)
-TOKEN = "token here"
+import os
+from dotenv import load_dotenv
+load_dotenv()
+TOKEN = os.getenv("TOKEN")
 
 client = discord.Client()
 b = Bot = commands.Bot(
@@ -37,7 +38,7 @@ async def ping(ctx):
 
 @b.command()
 async def version(ctx):
-    embed=discord.Embed(title="Gato-bot.py Beta 2", url="https://soundcloud.com/aprilboyy", description="Gato-bot.py is property of Xofo LLC. Unauthorized use and/or abuse of Xofo LLC property isn't nice :(", color=800080)
+    embed=discord.Embed(title="Gato-bot.py Beta 4", url="https://soundcloud.com/aprilboyy", description="Gato-bot.py is property of Xofo LLC. Unauthorized use and/or abuse of Xofo LLC property isn't nice :(", color=800080)
     await ctx.send(embed=embed)
     print("Command Version was used")
 
