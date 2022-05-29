@@ -8,3 +8,8 @@ Put your bots token into the file <br />
 Run `gato-bot.py` <br />
 The rest will be easy to understand!
 
+**Current Features:**
+
+`Debug [arg]` Repeats the argument into chat <br />
+`Version` Tells you the current version of gato-bot
+
