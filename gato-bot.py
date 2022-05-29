@@ -3,9 +3,10 @@ from discord.ext.commands import Bot
 from discord import Webhook
 from discord.ext import commands
 import time
+import datetime
 
 # Put your discord bot's token here (You can get it from discord.com/developers/applications/)
-TOKEN = "Token Here"
+TOKEN = "token here"
 
 client = discord.Client()
 b = Bot = commands.Bot(
@@ -17,19 +18,22 @@ activity = discord.Activity(type=discord.ActivityType.watching, name="github.com
 @b.event
 async def on_ready():
     channel = b.get_channel(974317715563089920) # This is for debug purposes, if you are going to use this, change the channel ID to your own :)
-    await channel.send("Gato-bot started up! :cat2:")
+    await channel.send("DEBUG")
     time.sleep(0.5)
-    await channel.send("Hope you day or night is going well! You can check my commands with `!help` and check the current version with `!verison`")
-    time.sleep(0.5)
-    await channel.send("Remember to star the repository if you enjoy (https://github.com/64x2/gato-bot)")
-    time.sleep(0.5)
-    print("Gato-bot.py has started up on the frontend! Enjoy the bot :^)")
+    print("we running gato-bot")
 
 @b.command()
 async def debug(ctx, arg):
     await ctx.send(arg)
     print("The command 'Debug' was just used for testing purposes!")
 
+@b.command(pass_context=True)
+async def ping(ctx):
+    time_1 = time.perf_counter()
+    await ctx.trigger_typing()
+    time_2 = time.perf_counter()
+    ping = round((time_2-time_1)*1000)
+    await ctx.send(f"Pong! Gato-bot currently has a ping of {ping}ms")
 
 @b.command()
 async def version(ctx):
