@@ -1,4 +1,4 @@
-# **GatoBot Public, cos private is not done yet :]**
+# **GatoBot: Multifunctional Bot for Discord**
 
 **Usage:** <br />
 Install Python 3 if it is not installed already <br />
@@ -8,11 +8,15 @@ Put your bots token into the .env file <br />
 Run `gato-bot.py` <br />
 The rest will be easy to understand!
 
-**Current Features:**
+**Current Features:** <br />
+  ban <br />
+  coinflip <br />
+  help <br />
+  kick     
+  leet     
+  ping     
+  unban    
+  usdtobtc <br />
+  version   
 
-`Debug [arg]` Repeats the argument into chat <br />
-`Version` Tells you the current version of gato-bot <br />
-`Ping` Tells you the ping of the bot  <br />
-
-**Please Note** <br />
-This version is far from as good as the private release, and is not fit for use rn. Currently only features debug commands (Maybe could be used as a base?)
+**GatoBot is highly optimised, stored in less than 200 lines of code (Thanks to @Invy55) and uses very little resources!**
