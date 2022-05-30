@@ -1,2 +1,6 @@
-discord
-time
+discord.py
+datetime
+tk
+asyncio
+requests
+python-dotenv
